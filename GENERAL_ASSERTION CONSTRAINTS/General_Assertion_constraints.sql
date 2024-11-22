@@ -3,5 +3,5 @@
 CREAte Assertion ReferentialIntegrity
 check (not exists (select * from Apply where sID not in (select sID from Student)));
 */
-CREAte Assertion AvgAccept
+CREATE Assertion AvgAccept
 check (3.0< (select avg(GPA) from Student where sID from Apply where decision='Y')));

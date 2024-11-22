@@ -1,6 +1,6 @@
 DROP TABLE Apply;
 
-CREATE TAble Apply(sID int, cName text,major text,decision text,unique(sID,cName),UNIQUE (sID,major));
+CREATE TABLE Apply(sID int, cName text,major text,decision text,UNIQUE(sID,cName),UNIQUE (sID,major));
                    
 Insert Into Apply VALUES (123,'NED College','CS',NULL);
 Insert Into Apply VALUES (123,'Szabist','EE',NULL);
